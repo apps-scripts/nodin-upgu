@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PERMOHONAN UP-GU</title>
+</head>
+<body>
+  <iframe 
+    src="https://script.google.com/macros/s/AKfycbzbMNu7errmo-4eN7reeZNgQcTxj0UWbSuwjoSWGe64i3Bls-mn1PbY3d3C6MJ_ilSFIA/exec"
+    width="100%"
+    height="100%"
+    allowfullscreen="true"
+    style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; border: none;">
+  </iframe>
+
+  <script>
+    window.onload = function() {
+      document.querySelector('iframe')
+        .requestFullscreen()
+        .catch((err) => {
+          console.error('Error attempting to enable full-screen mode:', err.message);
+        });
+    };
+  </script>
+</body>
+</html>
